@@ -32,9 +32,8 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Time/Priority Matrix 
 
-[Link]()
+[Link](https://i.imgur.com/ydBSNMd.jpg)
 
-*Note: Need to be done
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -57,11 +56,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 2hr | -hr | -hr|
+| Hamburger | M | 2hr | -hr | -hr|
 | Project Thumbnails | H | 3hr | -hr | -hr|
-| Regular Nav | H | 1hr | -hr | -hr|
-| Adding Form | H | 4hr| -hr | -hr |
-| Grid and Flex| M | 3hr | -hr | -hr|
+| Regular Nav | M | 1hr | -hr | -hr|
+| Contact Form | M | 4hr| -hr | -hr |
+| Grid and Flex| H | 3hr | -hr | -hr|
 | Working with API | H | 2hr| -hr | -hr |
 | Total | H | 15hrs| -hrs | -hrs |
 
