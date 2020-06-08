@@ -31,3 +31,4 @@ Wireframe link : https://i.imgur.com/ZjGYgql.jpg
 | Social Media Icons | L | 2hr | -hr | -hr|
 | Total | H | 2+hrs| -hrs | -hrs |
 
+Project Google Sheet : https://docs.google.com/spreadsheets/d/12ayaNOj50jTxSo0pVE2Rl60CJYdHl0UspqmoAOqjSmY/edit#gid=0
