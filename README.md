@@ -16,7 +16,7 @@ Wireframe link : https://i.imgur.com/ZjGYgql.jpg
 | --- | :---: |  :---: | :---: | :---: |
 | Hamburger | H | 2hr | -hr | -hr|
 | Project Thumbnails | H | 3hr | -hr | -hr|
-| Regular Nav | H | H | 1hr | -hr|
+| Regular Nav | H | 1hr | -hr | -hr|
 | Adding Form | H | 3hr| -hr | -hr |
 | Grid and Flex| M | 3hr | -hr | -hr|
 | Working with API | H | ?hr| -hr | -hr |
