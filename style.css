@@ -2,4 +2,10 @@
     margin: 10px;
     padding: 10px;
     background-color: blanchedalmond;
+    border: 1px solid red;
+}
+
+body {
+    display: grid;
+    
 }
