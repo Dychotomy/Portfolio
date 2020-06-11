@@ -11,14 +11,21 @@ body {
 }
 
 .banner {
+    display: flex;
+    height: 100vh;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner h1 {
+    margin: 25px;
     font-family: 'Balsamiq Sans', cursive;
 }
 
 .banner h4 {
+    margin: 25px;
     font-style: italic;
     font-size: 16px;
 }
@@ -30,11 +37,18 @@ nav h3 {
 #contentbox1 img {
     margin: 10px;
     height: 100px;
+    border: 2px solid gray;
     border-radius: 50%;
 }
 
 #contentbox1 {
     display: flex;
+    margin: 25px;
+    padding: 15px;
+    color: white;
+    background-color: rgba(0,0,0,.4);
+    border: 1px solid gray;
+    border-radius: 15px;
 }
 
 #contentbox1 span {
@@ -42,24 +56,18 @@ nav h3 {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-#contentbox1 p {
-    color: white;
-    background-color: rgba(0,0,0,.4);
-    border: 1px solid gray;
-    border-radius: 15px;
-}
-
 #contentbox2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    
 }
 
 #contentbox2 h2 {
+    margin: 25px;
+    padding: 15px;
     font-family: 'Balsamiq Sans', cursive;
     width: 50%;
     color: white;
@@ -70,9 +78,15 @@ nav h3 {
 
 .project-card {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.5em;
+    margin: 25px 10px 50px 10px;
+    
     padding: 15px;
     width: 300px;
     height: 400px;
@@ -80,7 +94,44 @@ nav h3 {
     background-color: rgba(0,0,0,.4);
     border: 1px solid gray;
     border-radius: 15px;
-    border: 1px solid red;
+    border: 1px solid gray;
+}
+
+.project-image {
+    position: relative;
+    width: 275px;
+
+}
+
+.project-desc {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.75em;
+}
+
+.project-link {
+    background-color: black;
+    width: 30%;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #F1F0EC;
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1/5;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 40px;
+    font-size: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,7 +144,9 @@ nav h3 {
 
     .banner {
         grid-column: 1/5;
-
+        height: 95vh;
+        justify-content: center;
+        align-items: center;
     }
 
     nav {
@@ -123,7 +176,6 @@ nav h3 {
     }
 
     #contentbox1 {
-        flex-grow: auto;
          display: flex;
     }
 
@@ -132,12 +184,10 @@ nav h3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        /* align-items: center; */
     }
 
     #contentbox2 h2 {
         width: 25%;
-        
     }
 
     #contentbox2-portfolio {
@@ -149,9 +199,32 @@ nav h3 {
     }
 
     footer {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         grid-column: 1/5;
-        
     }
-}    
+
+    .form-control {
+        border-color: black;
+    }
+
+    .sociallinks {
+        padding-bottom: 0;
+    }
+}   
+
+@media only screen and (min-width: 1200px) {
+
+    .banner {
+        justify-content: flex-start;
+    }
+
+    nav h3 {
+        font-weight: bold;
+        text-shadow: 2px 2px black;       
+    }
+
+    #contentbox2 h2 {
+        width: 20%;
+    }
+}

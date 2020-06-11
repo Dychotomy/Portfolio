@@ -27,9 +27,9 @@ $(() => {
         console.log('app - projectsArr', projectsArr)
             projectsArr.forEach( project => {
             let title = $('<div>').text(project.title).addClass('project-card')
-            let image = $('<img>').attr('src', 'project.image').attr('alt', 'Project Image')
-            let description = $('<p>').text(project.description)
-            let url = $('<a>').attr('href', project.url).text('VIEW')
+            let image = $('<img>').attr('src', project.image).attr('alt', 'Project Image').addClass('project-image')
+            let description = $('<p>').text(project.description).addClass('project-desc')
+            let url = $('<a>').attr('href', project.url).text('VIEW').addClass('project-link')
             $projectsLinks.append(title)
             title.prepend(image).append(description).append(url)
     })

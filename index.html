@@ -13,6 +13,7 @@
     <!-- MY STYLES  -->
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1cd281bbfb.js" crossorigin="anonymous"></script>
     <title>Ty's Portfolio</title>
 </head>
 <body>
@@ -51,16 +52,40 @@
             <p><span>About Me</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quidem, cum eveniet fugiat repellendus ipsum id aspernatur vero quas adipisci provident fugit obcaecati unde error, porro officia ea architecto quis.</p>
         </div>
         <div id="contentbox2">
-            <h2>Portfolio</h2>
+            <h2>Portfolio<br>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-bootstrap"></i>
+            </h2>
             <div id="contentbox2-portfolio"></div>
         </div>        
     </main>
     <footer>
         <div id="contactform">
-            <h2> Contact Form</h2>
+            <h3>Contact Me</h3>
         </div>
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Name">
+              </div>
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                <div class="input-group mb-2">
+                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="your@email.com">
+                </div>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+        </form>
         <div class="sociallinks">
-            <h3>Social Media Icons</h3>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="far fa-envelope"></i>
         </div>
     </footer>
     <script src="app.js"></script>

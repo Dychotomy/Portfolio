@@ -9,7 +9,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -56,13 +56,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | M | 2hr | -hr | -hr|
-| Project Thumbnails | H | 3hr | -hr | -hr|
-| Regular Nav | M | 1hr | -hr | -hr|
-| Contact Form | M | 4hr| -hr | -hr |
-| Grid and Flex| H | 3hr | -hr | -hr|
-| Working with API | H | 2hr| -hr | -hr |
-| Total | H | 15hrs| -hrs | -hrs |
+| Hamburger | M | 2hr | -hr | 2hr|
+| Project Thumbnails | H | 3hr | -hr | 2hr|
+| Regular Nav | M | 1hr | -hr | 1hr|
+| Contact Form | M | 4hr| -hr | 1hr |
+| Grid, Flex and CSS| H | 5hr | -hr | 4hr|
+| Working with API | H | 2hr| -hr | 1hr |
+| Total | H | 17hrs| -hrs | 11hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
@@ -70,11 +70,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Banner Animation | M | 3hr | -hr | -hr|
 | Bootstrap | L | 3hr | -hr | -hr|
 | Overlays | L | 3hr | -hr | -hr|
-| Social Media Icons | L | 2hr | -hr | -hr|
-| Total | H | 11+hrs| -hrs | -hrs |
+| Social Media Icons | L | 2hr | -hr | 1hr|
+| Total | H | 11+hrs| -hrs | 1hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+
+ JQuery
+ Bootstrap
+ Fontawesome
 
 ## Code Snippet
 
