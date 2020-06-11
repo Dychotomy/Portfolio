@@ -6,7 +6,7 @@ $(() => {
     $.ajax({
         url: sheetAsJSON
     }).then( data => {
-        console.log('data', data)
+        // console.log('data', data)
         const projects = data.feed.entry.map( project => {
             return {
                 title: project.gsx$title.$t,
@@ -21,14 +21,18 @@ $(() => {
     .catch( (err => console.log('err', err)))
 
 
-    console.log(`running after ajax`)
+
 
     function app(projectsArr) {
         console.log('app - projectsArr', projectsArr)
             projectsArr.forEach( project => {
-            let title = $('<h3>')
-            title.text(project.title)
+            let title = $('<div>').text(project.title)
+            let image = $('<img>').attr('src', 'project.image').attr('alt', 'Project Image')
+            let description = $('<p>').text(project.description)
+            let url = $('<a>').attr('href', 'project.url').text('VIEW')
             $projectsLinks.append(title)
+            title.prepend(image).append(description).append(url)
     })
     }
 })
+
