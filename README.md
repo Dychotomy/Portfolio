@@ -59,10 +59,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Hamburger | M | 2hr | -hr | 2hr|
 | Project Thumbnails | H | 3hr | -hr | 2hr|
 | Regular Nav | M | 1hr | -hr | 1hr|
-| Contact Form | M | 4hr| -hr | 1hr |
-| Grid, Flex and CSS| H | 5hr | -hr | 4hr|
-| Working with API | H | 2hr| -hr | 1hr |
-| Total | H | 17hrs| -hrs | 11hrs |
+| Contact Form | M | 4hr| -hr | 2hr |
+| Grid, Flex and CSS| H | 5hr | -hr | 5hr|
+| Working with API | H | 2hr| -hr | 2hr |
+| Total | H | 17hrs| -hrs | 14hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
