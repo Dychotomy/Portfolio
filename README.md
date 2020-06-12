@@ -101,13 +101,14 @@ There really wasn't a lot of code in my project, but I wanted to talk a little a
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-
+```
 **ERROR**: The internal links were broken and did not redirect the user to the correct portion of the page                                
 
 **RESOLUTION**: After discussing the problem with a classmate, discovered that the <a> has to be <a href="id"> not ,<a href="class">. I guess in hindsight that makes sense, you shouldn't have a single link potentially point to multiple sections on a page.
 
+```
 -----
-
+```
 **ERROR**: My images and url data pulled from the google sheet only displayed the alt information
 
 **RESOLUTION**: While I was certain that my google sheet was pulling data I could not figure out for the life of me why the images weren't displaying in the project cards and the urls links were broken. After watching a classmate talk about their code during a standup I realized I had a syntax error. I had inadvertly turned the data variable into a string. 
@@ -115,3 +116,4 @@ There really wasn't a lot of code in my project, but I wanted to talk a little a
 let image = $('<img>').attr('src', 'project.image').attr('alt', 'Project Image').addClass('project-image')
 instead of
 let image = $('<img>').attr('src', project.image).attr('alt', 'Project Image').addClass('project-image') 
+```
