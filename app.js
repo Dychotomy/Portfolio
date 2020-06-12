@@ -2,7 +2,7 @@ $(() => {
     console.log(`I am connected!`)
     const sheetUrl = 'https://docs.google.com/spreadsheets/d/12ayaNOj50jTxSo0pVE2Rl60CJYdHl0UspqmoAOqjSmY/edit?usp=sharing'
     const sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/12ayaNOj50jTxSo0pVE2Rl60CJYdHl0UspqmoAOqjSmY/od6/public/values?alt=json'
-    const $projectsLinks = $("#contentbox2-portfolio")
+    const $projectsLinks = $(".portfolio-projects")
     $.ajax({
         url: sheetAsJSON
     }).then( data => {
@@ -24,15 +24,15 @@ $(() => {
 
 
     function app(projectsArr) {
-        console.log('app - projectsArr', projectsArr)
-            projectsArr.forEach( project => {
+        // console.log('app - projectsArr', projectsArr)
+        projectsArr.forEach( project => {
             let title = $('<div>').text(project.title).addClass('project-card')
             let image = $('<img>').attr('src', project.image).attr('alt', 'Project Image').addClass('project-image')
             let description = $('<p>').text(project.description).addClass('project-desc')
             let url = $('<a>').attr('href', project.url).text('VIEW').addClass('project-link')
             $projectsLinks.append(title)
             title.prepend(image).append(description).append(url)
-    })
+        })
     }
 })
 

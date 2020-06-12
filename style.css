@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Default styling, optimized for mobile */
 body {
     background-image: url("https://res.cloudinary.com/dpn6ltns1/image/upload/v1591879510/Project%20images/tamas-tuzes-katai-WPGyHNq1lCE-unsplash_c7dhjx.jpg");
     background-size: cover;
@@ -24,24 +24,24 @@ body {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.banner h4 {
+.banner-quote {
     margin: 25px;
     font-style: italic;
     font-size: 16px;
 }
 
-nav h3 {
+.nav-tablet-desktop {
     display: none;
 }
 
-#contentbox1 img {
+.profile-image {
     margin: 10px;
     width: 100px;
     border: 2px solid gray;
     border-radius: 50%;
 }
 
-#contentbox1 {
+#profile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,12 +53,12 @@ nav h3 {
     border-radius: 15px;
 }
 
-#contentbox1 span {
+#profile span {
     font-size: 24px;
     font-family: 'Balsamiq Sans', cursive;
 }
 
-#contentbox2 {
+#portfolio {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -67,7 +67,7 @@ nav h3 {
     text-align: center;
 }
 
-#contentbox2 h2 {
+.portfolio-title-skills {
     margin: 25px;
     padding: 15px;
     font-family: 'Balsamiq Sans', cursive;
@@ -155,14 +155,16 @@ footer {
         grid-column: 1/5;
     }
 
-    nav h3 {
+    .nav-tablet-desktop {
         margin: 10px;
         display: flex;
+        font-weight: bold;
     }
 
-    nav a {
+    .nav-tablet-desktop a {
         margin-right: 15px;
     }
+    /* Bootstrap Class */
     nav .fixed-bottom {
         display: none;
     }
@@ -173,28 +175,28 @@ footer {
         flex-wrap: wrap;
     }
 
-    #contentbox1 img {
+    .profile-image {
         height: 150px;
         width: auto;
     }
 
-    #contentbox1 {
+    #profile {
         display: flex;
         flex-direction: row;
     }
 
-    #contentbox2 {
+    #portfolio {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    #contentbox2 h2 {
+    .portfolio-title-skills {
         width: 25%;
     }
 
-    #contentbox2-portfolio {
+    .portfolio-projects {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -207,12 +209,13 @@ footer {
         justify-content: space-between;
         grid-column: 1/5;
     }
-
+    /* Bootstrap class */
     .form-control {
         border-color: black;
     }
 
     .sociallinks {
+        width: 30%;
         padding-bottom: 0;
     }
 }   
@@ -223,12 +226,11 @@ footer {
         justify-content: flex-start;
     }
 
-    nav h3 {
-        font-weight: bold;
+    .nav-tablet-desktop {
         text-shadow: 2px 2px black;       
     }
 
-    #contentbox2 h2 {
+    .portfolio-title-skills {
         width: 20%;
     }
 }

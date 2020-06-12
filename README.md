@@ -10,7 +10,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -85,15 +85,33 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+function app(projectsArr) {
+        projectsArr.forEach( project => {
+            let title = $('<div>').text(project.title).addClass('project-card')
+            let image = $('<img>').attr('src', project.image).attr('alt', 'Project Image').addClass('project-image')
+            let description = $('<p>').text(project.description).addClass('project-desc')
+            let url = $('<a>').attr('href', project.url).text('VIEW').addClass('project-link')
+            $projectsLinks.append(title)
+            title.prepend(image).append(description).append(url)
+        })
+    }
 ```
+There really wasn't a lot of code in my project, but I wanted to talk a little about the snippet above. The code above is an expanded version of what we did in class. I was intimidated by the prospect expanding this out to be able to pull data from our google sheets. What really surprised me is when I got to this point in the project was how intuitive it was to implement. All the hard parts were done in class, I just needed to logically repeat the process for the additional entries. I'm mostly happy at the fact I didn't over think it.  
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
 
+**ERROR**: The internal links were broken and did not redirect the user to the correct portion of the page                                
+
+**RESOLUTION**: After discussing the problem with a classmate, discovered that the <a> has to be <a href="id"> not ,<a href="class">. I guess in hindsight that makes sense, you shouldn't have a single link potentially point to multiple sections on a page.
+
+-----
+
+**ERROR**: My images and url data pulled from the google sheet only displayed the alt information
+
+**RESOLUTION**: While I was certain that my google sheet was pulling data I could not figure out for the life of me why the images weren't displaying in the project cards and the urls links were broken. After watching a classmate talk about their code during a standup I realized I had a syntax error. I had inadvertly turned the data variable into a string. 
+
+let image = $('<img>').attr('src', 'project.image').attr('alt', 'Project Image').addClass('project-image')
+instead of
+let image = $('<img>').attr('src', project.image).attr('alt', 'Project Image').addClass('project-image') 
