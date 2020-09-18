@@ -101,7 +101,8 @@ body {
 
 .project-image {
     position: relative;
-    width: 275px;
+    height: 180px;
+    width: 250px;
 
 }
 
